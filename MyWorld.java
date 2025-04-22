@@ -16,6 +16,9 @@ public class MyWorld extends World {
         
         Rocket decor = new Rocket();
         addObject(decor, 50, 200);
+        
+        Boat boat = new Boat();
+        addObject(boat, 550, 375);
     }
     public Score getScore() {
     return score;
