@@ -1,15 +1,16 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Bomb extends Actor
 {
-    private int y = -10;
+    public int y = -10;
     public void act()
     {
         move(y);
         
         if(getX() <= 0){
             MyWorld world = (MyWorld)getWorld();
-            world.getScore().addScore(1);  
+            world.getScore().addScore(1);
             resetBomb();
+            y = -10 - (int) world.getScore().getScore()/5;
         }
         
         if(isTouching(Hero.class)){
