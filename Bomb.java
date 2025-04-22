@@ -8,6 +8,7 @@ public class Bomb extends Actor
         
         if(getX() <= 0){
             MyWorld world = (MyWorld)getWorld();
+            world.getScore().addScore(1);  
             resetBomb();
         }
         
