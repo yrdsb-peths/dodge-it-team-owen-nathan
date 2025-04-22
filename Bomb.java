@@ -11,10 +11,12 @@ public class Bomb extends Actor
             resetBomb();
         }
         
-        if(isTouching(Hero.class)) {
-            Wompwomp endgame = new Wompwomp();
-            getWorld().addObject(endgame, 300, 200);
-            getWorld().removeObject(this);
+        if(isTouching(Hero.class)){
+            Wompwomp womp = new Wompwomp();
+            getWorld().addObject(womp, 300, 200);
+            Hero hero = (Hero)getOneIntersectingObject(Hero.class);
+            getWorld().removeObject(hero); 
+            getWorld().removeObject(this); 
         }
     }
     

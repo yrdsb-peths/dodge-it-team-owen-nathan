@@ -1,4 +1,4 @@
-    import greenfoot.*;
+import greenfoot.*;
 
 public class MyWorld extends World {
     public MyWorld() {
@@ -9,5 +9,6 @@ public class MyWorld extends World {
         
         Bomb bomb = new Bomb();
         addObject(bomb, 600, 100);
+
     }
 }
