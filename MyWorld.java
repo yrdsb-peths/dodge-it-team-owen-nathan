@@ -1,6 +1,7 @@
 import greenfoot.*;
 
 public class MyWorld extends World {
+    private Score score;
     public MyWorld() {
         super(600, 400, 1);
         
@@ -10,5 +11,10 @@ public class MyWorld extends World {
         Bomb bomb = new Bomb();
         addObject(bomb, 600, 100);
 
+        score = new Score();
+        addObject(score, 100, 30); 
     }
+    public Score getScore() {
+    return score;
+    }  
 }
