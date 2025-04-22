@@ -10,6 +10,12 @@ public class Bomb extends Actor
             MyWorld world = (MyWorld)getWorld();
             resetBomb();
         }
+        
+        if(isTouching(Hero.class)) {
+            Wompwomp endgame = new Wompwomp();
+            getWorld().addObject(endgame, 300, 200);
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetBomb(){
