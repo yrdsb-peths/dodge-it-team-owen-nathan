@@ -21,13 +21,10 @@ public class Bomb extends Actor
             Hero hero = (Hero)getOneIntersectingObject(Hero.class);
             
             Cloud cloud = new Cloud();
-            Explosion boom = new Explosion();
             if(num == 0) {
                 getWorld().addObject(cloud, 100, 100);
-                getWorld().addObject(boom, 100, 100);
             } else {
                 getWorld().addObject(cloud, 100, 300);
-                getWorld().addObject(boom, 100, 300);
             }
             
             getWorld().removeObject(hero); 
