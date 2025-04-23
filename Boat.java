@@ -14,9 +14,7 @@ public class Boat extends Actor
             Skull skull = (Skull)getOneIntersectingObject(Skull.class);
             
             Cloud cloud = new Cloud();
-            Explosion boom = new Explosion();
             getWorld().addObject(cloud, 300, 375);
-            getWorld().addObject(boom, 300, 375);
             getWorld().removeObject(skull);
             getWorld().removeObject(this);
         }
