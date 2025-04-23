@@ -5,7 +5,10 @@ public class Hero extends Actor
     
     public void act()
     {
-        if(Greenfoot.mouseClicked(null)) {
+        String key = Greenfoot.getKey();
+        if(Greenfoot.mouseClicked(null)){
+            atTop = !atTop;
+        } else if ("space".equals(key)){
             atTop = !atTop;
         }
         
