@@ -3,7 +3,9 @@ public class Bomb extends Actor
 {
     private int y = -10;
     private int num;
-
+    public Bomb() {
+        setImage("bomb.png");
+    }
     public void act()
     {
         move(y);

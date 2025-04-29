@@ -2,6 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 public class Rocket extends Actor
 {
+    public Rocket() {
+        setImage("rocket.png");
+    }
     private int z = 4;
     public void act(){
         move(z);

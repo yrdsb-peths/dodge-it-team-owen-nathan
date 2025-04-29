@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Cloud extends Actor
 {
+    public Cloud() {
+        setImage("cloud.png");
+    }
     /**
      * Act - do whatever the Cloud wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

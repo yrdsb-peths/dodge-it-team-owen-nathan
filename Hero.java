@@ -2,7 +2,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Hero extends Actor
 {
     boolean atTop = true;
-    
+    public Hero() {
+        setImage("seal.png");
+    }
     public void act()
     {
         String key = Greenfoot.getKey();
